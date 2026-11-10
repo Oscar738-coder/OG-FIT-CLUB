@@ -252,7 +252,6 @@ ul, ol { padding: 0; list-style: none; }
 .price { margin-top: 6px; display: flex; align-items: baseline; gap: 4px; }
 .price b { font-family: var(--f-display); font-weight: 850; font-size: 46px; letter-spacing: -0.03em; }
 .price span { color: var(--muted); font-weight: 600; }
-.price--ask b { font-size: 30px; line-height: 1.55; }
 .plan__desc { color: var(--muted); font-size: 15px; margin-top: 4px; }
 .plan .checks { margin: 22px 0 28px; flex: 1; align-content: start; }
 
@@ -282,6 +281,8 @@ ul, ol { padding: 0; list-style: none; }
 
 /* Footer */
 .footer { border-top: 1px solid var(--line); padding: 34px 0 calc(34px + env(safe-area-inset-bottom)); color: var(--dim); font-size: 14px; }
+.footer__link { color: var(--text); transition: color .2s; }
+.footer__link:hover { color: var(--red); }
 .footer__inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
 
 /* Reveal */

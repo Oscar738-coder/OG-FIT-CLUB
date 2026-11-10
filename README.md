@@ -10,16 +10,13 @@ python3 -m http.server 8000
 # abre http://localhost:8000
 ```
 
-## Antes de publicar
+## Contacto
 
-En `main.js`, completa `CONFIG.whatsapp` con tu número (solo dígitos, con lada de país;
-por ejemplo `52` + 10 dígitos). Con eso, todos los botones abren WhatsApp con un mensaje
-ya escrito que incluye la membresía elegida.
+- WhatsApp: el número se configura en `main.js` (`CONFIG.whatsapp`, con lada de país `52`).
+  Los botones abren WhatsApp con un mensaje ya escrito que incluye la membresía elegida.
+- Instagram: [@coach_oscargh](https://www.instagram.com/coach_oscargh/)
 
-Revisa también en `index.html`:
-- Los beneficios de cada membresía (Simplicity, Levels y Platinum).
-- El precio de Platinum (ahora dice "A consultar").
-- El precio de las bolsas de licuado verde (ahora dice "Pregunta").
+Los beneficios de cada membresía están en `index.html`, sección `#membresias`.
 
 ## Estructura
 

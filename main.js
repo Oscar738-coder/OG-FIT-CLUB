@@ -3,7 +3,7 @@
    ============================================================ */
 const CONFIG = {
   // Número de WhatsApp con lada de país, solo dígitos (ej. México: 52 + 10 dígitos).
-  whatsapp: "",
+  whatsapp: "522284041575",
   mensajeBase: "Hola Oscar, vi la página de OG Fit Club y quiero empezar.",
 };
 
