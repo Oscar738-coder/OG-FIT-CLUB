@@ -1,0 +1,628 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>OG Fit Club · Nutrición y entrenamiento con Oscar García</title>
+  <meta name="description" content="Nutrición deportiva y entrenamiento personalizado con Oscar García. Planes desde $500 MXN al mes, con seguimiento 1 a 1 y app propia.">
+  <meta name="theme-color" content="#050505">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="OG Fit Club · Oscar García">
+  <meta property="og:description" content="Nutrición y entrenamiento a tu medida, en una sola app. Paso a paso y a tu ritmo.">
+  <meta property="og:image" content="assets/img/manos.webp">
+  <link rel="icon" href="assets/img/og-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..900;1,62..125,400..900&family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <header class="nav" id="nav">
+    <div class="wrap nav__inner">
+      <a href="#inicio" class="brand" aria-label="OG Fit Club, inicio">
+        <img src="assets/img/og-logo.png" alt="" width="62" height="25">
+      </a>
+      <nav class="nav__links" aria-label="Principal">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#cambios">Cambios</a>
+        <a href="#planes">Planes</a>
+        <a href="#app">App</a>
+        <a href="#tienda">Tienda</a>
+      </nav>
+      <div class="nav__actions">
+        <a href="#agendar" class="btn btn--sm btn--red" data-wa>Agendar</a>
+        <button class="menu-btn" id="menuBtn" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="menu" id="mobileMenu" hidden>
+    <nav class="menu__links" aria-label="Menú">
+      <a href="#sobre-mi"><span>01</span>Sobre mí</a>
+      <a href="#cambios"><span>02</span>Cambios</a>
+      <a href="#planes"><span>03</span>Planes</a>
+      <a href="#app"><span>04</span>App</a>
+      <a href="#tienda"><span>05</span>Tienda</a>
+      <a href="#membresias"><span>06</span>Membresías</a>
+    </nav>
+    <div class="menu__foot">
+      <a href="#agendar" class="btn btn--red btn--block" data-wa>Agendar por WhatsApp</a>
+      <a href="https://www.instagram.com/coach_oscargh/" class="link" target="_blank" rel="noopener">@coach_oscargh <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+
+  <main id="contenido">
+    <!-- PORTADA -->
+    <section class="splash" aria-label="OG · Entrenador personal y nutrición deportiva">
+      <p class="splash__tag splash__tag--top">Entrenador personal</p>
+      <h1 class="splash__logo">
+        <span class="splash__mark" role="img" aria-label="OG"></span>
+      </h1>
+      <p class="splash__tag splash__tag--bottom">Nutrición deportiva</p>
+      <a href="#inicio" class="splash__scroll" aria-label="Bajar al contenido"><span></span></a>
+    </section>
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow reveal">Oscar García</p>
+          <h2 class="hero__title reveal">
+            Come, entrena y progresa
+            <span class="accent">con un solo plan.</span>
+          </h2>
+          <p class="lead reveal">Nutrición y entrenamiento hechos a tu medida, con seguimiento 1 a 1. Paso a paso y a tu ritmo.</p>
+          <div class="ctas reveal">
+            <a href="#planes" class="btn btn--red">Ver planes</a>
+            <a href="#app" class="link">Conoce la app <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+
+        <div class="hero__media reveal">
+          <div class="device">
+            <video id="heroVideo" class="device__video" src="assets/video/og-historia.mp4"
+                   poster="assets/img/poster.webp" autoplay muted loop playsinline preload="metadata"
+                   aria-label="Recorrido por la app de OG Fit Club"></video>
+            <button class="sound" id="soundBtn" type="button" aria-pressed="false">
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M3 9v6h4l5 4V5L7 9H3z"/><path class="sound__waves" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M16 8.5a5 5 0 0 1 0 7M18.8 5.8a9 9 0 0 1 0 12.4"/><path class="sound__x" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="m16 9 6 6m0-6-6 6"/></svg>
+              <span>Activar sonido</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section class="section" id="sobre-mi">
+      <div class="wrap about">
+        <img class="about__photo reveal" src="assets/img/oscar.webp?v=4" alt="Oscar García en el gimnasio" width="1200" height="1600" loading="lazy">
+        <div class="about__copy">
+          <p class="eyebrow reveal">Sobre mí</p>
+          <h2 class="h2 reveal">Tu mejor versión, con ciencia y estrategia.</h2>
+          <p class="text text--lead reveal">
+            Soy un apasionado de la nutrición, el entrenamiento y la ciencia detrás de la
+            transformación física y la salud.
+          </p>
+          <p class="text reveal">
+            Mi objetivo es ayudar a las personas a alcanzar su mejor versión, trabajando de
+            manera integral en su composición corporal, rendimiento físico y bienestar.
+          </p>
+          <p class="text reveal">
+            Creo firmemente que cada persona tiene necesidades y objetivos diferentes. Por eso
+            mi compromiso es ofrecer un acompañamiento personalizado, basado en evidencia
+            científica, estrategias sostenibles y una atención enfocada en resultados reales.
+          </p>
+          <p class="text reveal">
+            Más allá de transformar el físico, busco generar cambios positivos que perduren en
+            el tiempo, fomentando hábitos saludables, disciplina y una mejor calidad de vida.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAMBIOS -->
+    <section class="section" id="cambios">
+      <div class="wrap">
+        <header class="head head--center">
+          <p class="eyebrow reveal">Cambios</p>
+          <h2 class="h2 reveal">Resultados reales.</h2>
+          <p class="text text--center reveal">Personas que confiaron en el proceso, con estrategia, disciplina y constancia.</p>
+        </header>
+        <ul class="changes">
+          <li class="change reveal">
+            <figure>
+              <span class="change__half" style="flex: 615"><img src="assets/img/cambios/cambio-01-a.webp?v=6" alt="Antes, cliente 1" width="615" height="1200" loading="lazy" decoding="async"><b>Antes</b></span>
+              <span class="change__half" style="flex: 617"><img src="assets/img/cambios/cambio-01-d.webp?v=6" alt="Después, cliente 1" width="617" height="1200" loading="lazy" decoding="async"><b>Después</b></span>
+            </figure>
+          </li>
+          <li class="change reveal">
+            <figure>
+              <span class="change__half" style="flex: 620"><img src="assets/img/cambios/cambio-02-a.webp?v=6" alt="Antes, cliente 2" width="620" height="1200" loading="lazy" decoding="async"><b>Antes</b></span>
+              <span class="change__half" style="flex: 620"><img src="assets/img/cambios/cambio-02-d.webp?v=6" alt="Después, cliente 2" width="620" height="1200" loading="lazy" decoding="async"><b>Después</b></span>
+            </figure>
+          </li>
+          <li class="change reveal">
+            <figure>
+              <span class="change__half" style="flex: 620"><img src="assets/img/cambios/cambio-03-a.webp?v=6" alt="Antes, cliente 3" width="620" height="1200" loading="lazy" decoding="async"><b>Antes</b></span>
+              <span class="change__half" style="flex: 620"><img src="assets/img/cambios/cambio-03-d.webp?v=6" alt="Después, cliente 3" width="620" height="1200" loading="lazy" decoding="async"><b>Después</b></span>
+            </figure>
+          </li>
+          <li class="change reveal">
+            <figure>
+              <span class="change__half" style="flex: 597"><img src="assets/img/cambios/cambio-04-a.webp?v=6" alt="Antes, cliente 4" width="597" height="1200" loading="lazy" decoding="async"><b>Antes</b></span>
+              <span class="change__half" style="flex: 620"><img src="assets/img/cambios/cambio-04-d.webp?v=6" alt="Después, cliente 4" width="620" height="1200" loading="lazy" decoding="async"><b>Después</b></span>
+            </figure>
+          </li>
+          <li class="change reveal">
+            <figure>
+              <span class="change__half" style="flex: 618"><img src="assets/img/cambios/cambio-05-a.webp?v=6" alt="Antes, cliente 5" width="618" height="1200" loading="lazy" decoding="async"><b>Antes</b></span>
+              <span class="change__half" style="flex: 618"><img src="assets/img/cambios/cambio-05-d.webp?v=6" alt="Después, cliente 5" width="618" height="1200" loading="lazy" decoding="async"><b>Después</b></span>
+            </figure>
+          </li>
+          <li class="change reveal">
+            <figure>
+              <span class="change__half" style="flex: 666"><img src="assets/img/cambios/cambio-06-a.webp?v=6" alt="Antes, cliente 6" width="666" height="1200" loading="lazy" decoding="async"><b>Antes</b></span>
+              <span class="change__half" style="flex: 666"><img src="assets/img/cambios/cambio-06-d.webp?v=6" alt="Después, cliente 6" width="666" height="1200" loading="lazy" decoding="async"><b>Después</b></span>
+            </figure>
+          </li>
+          <li class="change reveal" data-more hidden>
+            <figure>
+              <span class="change__half" style="flex: 789"><img src="assets/img/cambios/cambio-07-a.webp?v=6" alt="Antes, cliente 7" width="789" height="1200" loading="lazy" decoding="async"><b>Antes</b></span>
+              <span class="change__half" style="flex: 789"><img src="assets/img/cambios/cambio-07-d.webp?v=6" alt="Después, cliente 7" width="789" height="1200" loading="lazy" decoding="async"><b>Después</b></span>
+            </figure>
+          </li>
+          <li class="change reveal" data-more hidden>
+            <figure>
+              <span class="change__half" style="flex: 624"><img src="assets/img/cambios/cambio-08-a.webp?v=6" alt="Antes, cliente 8" width="624" height="1200" loading="lazy" decoding="async"><b>Antes</b></span>
+              <span class="change__half" style="flex: 624"><img src="assets/img/cambios/cambio-08-d.webp?v=6" alt="Después, cliente 8" width="624" height="1200" loading="lazy" decoding="async"><b>Después</b></span>
+            </figure>
+          </li>
+          <li class="change reveal" data-more hidden>
+            <figure>
+              <span class="change__half" style="flex: 621"><img src="assets/img/cambios/cambio-09-a.webp?v=6" alt="Antes, cliente 9" width="621" height="1200" loading="lazy" decoding="async"><b>Antes</b></span>
+              <span class="change__half" style="flex: 621"><img src="assets/img/cambios/cambio-09-d.webp?v=6" alt="Después, cliente 9" width="621" height="1200" loading="lazy" decoding="async"><b>Después</b></span>
+            </figure>
+          </li>
+          <li class="change reveal" data-more hidden>
+            <figure>
+              <span class="change__half" style="flex: 623"><img src="assets/img/cambios/cambio-10-a.webp?v=6" alt="Antes, cliente 10" width="623" height="1200" loading="lazy" decoding="async"><b>Antes</b></span>
+              <span class="change__half" style="flex: 623"><img src="assets/img/cambios/cambio-10-d.webp?v=6" alt="Después, cliente 10" width="623" height="1200" loading="lazy" decoding="async"><b>Después</b></span>
+            </figure>
+          </li>
+          <li class="change reveal" data-more hidden>
+            <figure>
+              <span class="change__half" style="flex: 621"><img src="assets/img/cambios/cambio-11-a.webp?v=6" alt="Antes, cliente 11" width="621" height="1200" loading="lazy" decoding="async"><b>Antes</b></span>
+              <span class="change__half" style="flex: 621"><img src="assets/img/cambios/cambio-11-d.webp?v=6" alt="Después, cliente 11" width="621" height="1200" loading="lazy" decoding="async"><b>Después</b></span>
+            </figure>
+          </li>
+          <li class="change reveal" data-more hidden>
+            <figure>
+              <span class="change__half" style="flex: 644"><img src="assets/img/cambios/cambio-12-a.webp?v=6" alt="Antes, cliente 12" width="644" height="1200" loading="lazy" decoding="async"><b>Antes</b></span>
+              <span class="change__half" style="flex: 643"><img src="assets/img/cambios/cambio-12-d.webp?v=6" alt="Después, cliente 12" width="643" height="1200" loading="lazy" decoding="async"><b>Después</b></span>
+            </figure>
+          </li>
+          <li class="change reveal" data-more hidden>
+            <figure>
+              <span class="change__half" style="flex: 591"><img src="assets/img/cambios/cambio-13-a.webp?v=6" alt="Antes, cliente 13" width="591" height="1200" loading="lazy" decoding="async"><b>Antes</b></span>
+              <span class="change__half" style="flex: 574"><img src="assets/img/cambios/cambio-13-d.webp?v=6" alt="Después, cliente 13" width="574" height="1200" loading="lazy" decoding="async"><b>Después</b></span>
+            </figure>
+          </li>
+          <li class="change reveal" data-more hidden>
+            <figure>
+              <span class="change__half" style="flex: 585"><img src="assets/img/cambios/cambio-14-a.webp?v=6" alt="Antes, cliente 14" width="585" height="1200" loading="lazy" decoding="async"><b>Antes</b></span>
+              <span class="change__half" style="flex: 593"><img src="assets/img/cambios/cambio-14-d.webp?v=6" alt="Después, cliente 14" width="593" height="1200" loading="lazy" decoding="async"><b>Después</b></span>
+            </figure>
+          </li>
+          <li class="change reveal" data-more hidden>
+            <figure>
+              <span class="change__half" style="flex: 598"><img src="assets/img/cambios/cambio-15-a.webp?v=6" alt="Antes, cliente 15" width="598" height="1200" loading="lazy" decoding="async"><b>Antes</b></span>
+              <span class="change__half" style="flex: 603"><img src="assets/img/cambios/cambio-15-d.webp?v=6" alt="Después, cliente 15" width="603" height="1200" loading="lazy" decoding="async"><b>Después</b></span>
+            </figure>
+          </li>
+          <li class="change reveal" data-more hidden>
+            <figure>
+              <span class="change__half" style="flex: 644"><img src="assets/img/cambios/cambio-16-a.webp?v=6" alt="Antes, cliente 16" width="644" height="1200" loading="lazy" decoding="async"><b>Antes</b></span>
+              <span class="change__half" style="flex: 644"><img src="assets/img/cambios/cambio-16-d.webp?v=6" alt="Después, cliente 16" width="644" height="1200" loading="lazy" decoding="async"><b>Después</b></span>
+            </figure>
+          </li>
+          <li class="change reveal" data-more hidden>
+            <figure>
+              <span class="change__half" style="flex: 824"><img src="assets/img/cambios/cambio-17-a.webp?v=6" alt="Antes, cliente 17" width="824" height="1200" loading="lazy" decoding="async"><b>Antes</b></span>
+              <span class="change__half" style="flex: 831"><img src="assets/img/cambios/cambio-17-d.webp?v=6" alt="Después, cliente 17" width="831" height="1200" loading="lazy" decoding="async"><b>Después</b></span>
+            </figure>
+          </li>
+          <li class="change reveal" data-more hidden>
+            <figure>
+              <span class="change__half" style="flex: 973"><img src="assets/img/cambios/cambio-18-a.webp?v=6" alt="Antes, cliente 18" width="973" height="1200" loading="lazy" decoding="async"><b>Antes</b></span>
+              <span class="change__half" style="flex: 991"><img src="assets/img/cambios/cambio-18-d.webp?v=6" alt="Después, cliente 18" width="991" height="1200" loading="lazy" decoding="async"><b>Después</b></span>
+            </figure>
+          </li>
+          <li class="change reveal" data-more hidden>
+            <figure>
+              <span class="change__half" style="flex: 1118"><img src="assets/img/cambios/cambio-19-a.webp?v=6" alt="Antes, cliente 19" width="1118" height="1200" loading="lazy" decoding="async"><b>Antes</b></span>
+              <span class="change__half" style="flex: 1116"><img src="assets/img/cambios/cambio-19-d.webp?v=6" alt="Después, cliente 19" width="1116" height="1200" loading="lazy" decoding="async"><b>Después</b></span>
+            </figure>
+          </li>
+        </ul>
+        <div class="changes__more reveal">
+          <button class="btn btn--ghost" type="button" id="moreChanges" aria-expanded="false">Ver más cambios</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLANES -->
+    <section class="section" id="planes">
+      <div class="wrap">
+        <header class="head head--center">
+          <p class="eyebrow reveal">Planes</p>
+          <h2 class="h2 reveal">Elige tu punto de partida.</h2>
+        </header>
+
+        <div class="tiers">
+          <article class="tier  reveal">
+            <div class="tier__top">
+              <span class="tier__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19c0-8 5-14 14-14 0 9-6 14-14 14z"/><path d="M5 19c3-4 6-7 10-9"/></svg></span>
+              <p class="tier__type">Nutrición</p>
+            </div>
+            <h3 class="tier__name">Esencial</h3>
+            <p class="tier__tag">Mejora tus hábitos y composición desde la alimentación.</p>
+            <p class="price"><span class="price__cur">$</span><b>500</b><span class="price__per">MXN<br>al mes</span></p>
+            <ul class="list">
+              <li>Plan de alimentación personalizado</li>
+              <li>Valoración y mediciones cada 15 días</li>
+              <li>Guía de equivalencias y sustitutos</li>
+              <li>Seguimiento 1 a 1 vía chat</li>
+            </ul>
+            <a href="#agendar" class="btn btn--ghost btn--block" data-wa data-service="el Plan Esencial">Elegir Esencial</a>
+          </article>
+
+          <article class="tier  reveal">
+            <div class="tier__top">
+              <span class="tier__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10v4M6 7v10M18 7v10M21 10v4M6 12h12"/></svg></span>
+              <p class="tier__type">Entrenamiento</p>
+            </div>
+            <h3 class="tier__name">Force</h3>
+            <p class="tier__tag">Estructura profesional para tu entrenamiento.</p>
+            <p class="price"><span class="price__cur">$</span><b>500</b><span class="price__per">MXN<br>al mes</span></p>
+            <ul class="list">
+              <li>Rutina mensual periodizada</li>
+              <li>Hipertrofia, fuerza, funcional o híbrido</li>
+              <li>Ajustes de progresión mensuales</li>
+            </ul>
+            <a href="#agendar" class="btn btn--ghost btn--block" data-wa data-service="el Plan Force">Elegir Force</a>
+          </article>
+
+          <article class="tier tier--featured reveal">
+            <span class="badge">★ Recomendado</span>
+            <div class="tier__top">
+              <span class="tier__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 3 5 13h6l-1 8 8-10h-6z"/></svg></span>
+              <p class="tier__type">Nutrición + entrenamiento</p>
+            </div>
+            <h3 class="tier__name">Pro</h3>
+            <p class="tier__tag">Todo bajo una misma estrategia para transformar tu físico.</p>
+            <p class="price"><span class="price__cur">$</span><b>799</b><span class="price__per">MXN<br>al mes</span></p>
+            <p class="save">Ahorras $201 al mes</p>
+            <ul class="list">
+              <li>Todo lo del Esencial y el Force</li>
+              <li>Plicometría avanzada</li>
+              <li>Tabla personalizada de porciones</li>
+            </ul>
+            <a href="#agendar" class="btn btn--red btn--block" data-wa data-service="el Plan Pro">Elegir Pro</a>
+          </article>
+
+          <article class="tier tier--elite reveal">
+            <span class="badge badge--elite">Premium</span>
+            <div class="tier__top">
+              <span class="tier__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M7 6H4v1a3 3 0 0 0 3 3M17 6h3v1a3 3 0 0 1-3 3M12 14v4M8 21h8M9 18h6"/></svg></span>
+              <p class="tier__type">Deportivo</p>
+            </div>
+            <h3 class="tier__name">Elite</h3>
+            <p class="tier__tag">Para atletas en preparación competitiva.</p>
+            <p class="price"><span class="price__cur">$</span><b>1,699</b><span class="price__per">MXN<br>al mes</span></p>
+            <ul class="list">
+              <li>Nutrición deportiva avanzada</li>
+              <li>Entrenamiento de alta intensidad</li>
+              <li>Plicometría estricta</li>
+              <li>Seguimiento prioritario 24/7</li>
+              <li>Suplementación acorde a objetivos y necesidades</li>
+            </ul>
+            <a href="#agendar" class="btn btn--light btn--block" data-wa data-service="el Plan Elite">Elegir Elite</a>
+          </article>
+        </div>
+
+        <p class="promo reveal"><span class="promo__chip">−10%</span> en cualquier plan al pagar <b>3 meses por adelantado</b>.</p>
+
+        <div class="extras">
+          <header class="extras__head reveal">
+            <p class="eyebrow">Recuperación</p>
+            <h3 class="extras__title">Masajes</h3>
+            <p class="text text--sm">Complementa tu plan y ayuda a tu cuerpo a recuperarse.</p>
+          </header>
+          <article class="extra reveal">
+            <span class="extra__icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M10 30c4-2 7-6 9-11M38 30c-4-2-7-6-9-11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M6 36h36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M17 36c0-6 3-10 7-10s7 4 7 10" fill="none" stroke="#e61f30" stroke-width="2" stroke-linecap="round"/><circle cx="24" cy="15" r="4" fill="none" stroke="currentColor" stroke-width="2"/></svg></span>
+            <div>
+              <h4>Masaje descontracturante</h4>
+              <p>Libera tensión y nudos musculares después de entrenamientos intensos.</p>
+            </div>
+            <a href="#agendar" class="link" data-wa data-service="un masaje descontracturante">Agendar <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="extra reveal">
+            <span class="extra__icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 33c-6 0-13-5-15-13 6 0 12 4 15 13zM24 33c6 0 13-5 15-13-6 0-12 4-15 13z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M24 10c4 6 4 15 0 23-4-8-4-17 0-23z" fill="none" stroke="#e61f30" stroke-width="2" stroke-linejoin="round"/><path d="M10 39h28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+            <div>
+              <h4>Masaje relajante</h4>
+              <p>Reduce el estrés, mejora tu descanso y te ayuda a desconectar.</p>
+            </div>
+            <a href="#agendar" class="link" data-wa data-service="un masaje relajante">Agendar <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- APP -->
+    <section class="section" id="app">
+      <div class="wrap">
+        <header class="head">
+          <p class="eyebrow reveal">La app</p>
+          <h2 class="h2 reveal">Todo tu proceso,<br>en un solo lugar.</h2>
+        </header>
+
+        <div class="features">
+          <figure class="feature reveal">
+            <img class="phone" src="assets/img/nutricion.webp" alt="Pantalla Mi dieta con progreso del día y macros" width="760" height="1440" loading="lazy">
+            <figcaption>
+              <h3>Nutrición</h3>
+              <p>Tus comidas con horario y macros. Si te falta un ingrediente, te da una alternativa.</p>
+            </figcaption>
+          </figure>
+          <figure class="feature reveal">
+            <img class="phone" src="assets/img/entrenamiento.webp" alt="Pantalla de Press militar con 1RM y pesos de trabajo" width="760" height="1440" loading="lazy">
+            <figcaption>
+              <h3>Entrenamiento</h3>
+              <p>Tus pesos de trabajo calculados, registro de series y demostración de cada ejercicio.</p>
+            </figcaption>
+          </figure>
+          <figure class="feature reveal">
+            <img class="phone" src="assets/img/progreso.webp" alt="Gráficas de progreso de cintura y cadera" width="760" height="1440" loading="lazy">
+            <figcaption>
+              <h3>Progreso</h3>
+              <p>Medidas, fuerza y volumen en gráficas claras. Ves cómo avanzas cada semana.</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIENDA -->
+    <section class="section" id="tienda">
+      <div class="wrap">
+        <header class="head store__head">
+          <div>
+            <p class="eyebrow reveal">Tienda OG</p>
+            <h2 class="h2 reveal">La comida de tu plan, sin vueltas.</h2>
+          </div>
+          <p class="text reveal">Pide desde la app. Reviso tu pedido y acordamos la entrega contigo.</p>
+        </header>
+        <ul class="products" aria-label="Algunos productos de la tienda">
+          <li class="product reveal" style="--tint: #e61f30">
+            <svg class="product__art" viewBox="0 0 120 120" aria-hidden="true"><path d="M14 76h92" stroke="#e9e9ec" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/><path d="M18 76l8 16h68l8-16" fill="none" stroke="#e9e9ec" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M27 76c-1-12 8-19 18-16 3-11 19-14 26-4 8-6 22-1 21 11 6 2 6 9 1 9z" fill="#c2141f"/>
+<g fill="#ffb3a8" opacity=".55"><circle cx="44" cy="66" r="2"/><circle cx="58" cy="60" r="1.6"/><circle cx="70" cy="68" r="2.2"/><circle cx="82" cy="64" r="1.6"/><circle cx="52" cy="72" r="1.4"/><circle cx="76" cy="57" r="1.3"/></g></svg>
+            <h3>Carne molida</h3>
+            <p>De res magra</p>
+          </li>
+          <li class="product reveal" style="--tint: #e8b9a6">
+            <svg class="product__art" viewBox="0 0 120 120" aria-hidden="true"><ellipse cx="60" cy="86" rx="44" ry="7" fill="none" stroke="#6b6b74" stroke-width="1.6"/>
+<path d="M28 70c-6-18 10-34 31-32 22 2 39 16 33 32-6 14-28 18-44 14-10-2-16-6-20-14z" fill="#ecc3b0"/>
+<path d="M42 54c12-3 26 0 36 8M38 64c14-2 30 1 42 9M46 74c10 0 20 2 28 6" fill="none" stroke="#b97f69" stroke-width="1.6" stroke-linecap="round" opacity=".7"/></svg>
+            <h3>Pechuga de pollo</h3>
+            <p>Natural, sin piel</p>
+          </li>
+          <li class="product reveal" style="--tint: #f08a6c">
+            <svg class="product__art" viewBox="0 0 120 120" aria-hidden="true"><path d="M22 50l70-8c6-1 8 4 8 8v26c0 4-3 6-6 6l-70 6c-4 0-6-3-6-6V56c0-4 1-6 4-6z" fill="#f08a6c"/>
+<path d="M22 50l70-8c6-1 8 4 8 8" fill="none" stroke="#c45c42" stroke-width="3" stroke-linecap="round"/>
+<path d="M36 50c-4 10 0 22-4 36M52 48c-4 10 0 22-4 36M68 46c-4 10 0 22-4 36M84 44c-4 10 0 22-4 36" fill="none" stroke="#ffe1d6" stroke-width="2" stroke-linecap="round" opacity=".75"/></svg>
+            <h3>Salmón</h3>
+            <p>Fresco, en porción</p>
+          </li>
+          <li class="product reveal" style="--tint: #c9d3dc">
+            <svg class="product__art" viewBox="0 0 120 120" aria-hidden="true"><path d="M18 60c14-20 50-24 68-4l16-12-4 16 4 16-16-12c-18 20-54 16-68-4z" fill="#d6dde3"/>
+<path d="M44 50c-4 6-4 14 0 20" fill="none" stroke="#8a97a3" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M54 56c6-2 14-2 20 2M54 64c6 2 14 2 20-2" fill="none" stroke="#a7b3bd" stroke-width="1.4" stroke-linecap="round"/>
+<circle cx="31" cy="57" r="2.6" fill="#1a1a1d"/></svg>
+            <h3>Filete de pescado</h3>
+            <p>Blanco, ligero</p>
+          </li>
+          <li class="product reveal" style="--tint: #f4f1ea">
+            <svg class="product__art" viewBox="0 0 120 120" aria-hidden="true"><rect x="49" y="16" width="22" height="9" rx="2.5" fill="#e61f30"/>
+<path d="M52 25h16v7c0 6 10 8 10 18v46c0 4-3 6-6 6H48c-3 0-6-2-6-6V50c0-10 10-12 10-18z" fill="#f4f1ea"/>
+<rect x="42" y="58" width="36" height="22" fill="#141416"/>
+<text x="60" y="72.5" text-anchor="middle" font-family="Manrope, sans-serif" font-size="7.5" font-weight="700" letter-spacing="1.2" fill="#f4f4f5">KÉFIR</text></svg>
+            <h3>Kéfir</h3>
+            <p>Probiótico natural</p>
+          </li>
+          <li class="product reveal" style="--tint: #3fae68">
+            <svg class="product__art" viewBox="0 0 120 120" aria-hidden="true"><g opacity=".45" transform="translate(12 -6)"><path d="M36 30h48l2 66c0 4-3 6-7 6H41c-4 0-7-2-7-6z" fill="#2f8a52"/></g>
+<rect x="36" y="22" width="48" height="9" rx="2" fill="#2b7a49"/>
+<rect x="70" y="12" width="10" height="10" rx="2" fill="#e61f30"/>
+<path d="M36 31h48l2 66c0 4-3 6-7 6H41c-4 0-7-2-7-6z" fill="#3fae68"/>
+<path d="M60 82c-12-2-16-14-10-26 10 2 18 10 10 26zM60 82c-2-8-5-14-10-26" fill="none" stroke="#e9ffe9" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h3>Licuado verde</h3>
+            <p>7 bolsas de 250 ml</p>
+          </li>
+        </ul>
+        <p class="store__cta reveal"><a href="#agendar" class="link" data-wa data-service="los productos de la tienda">Pregunta por disponibilidad <span aria-hidden="true">→</span></a></p>
+      </div>
+    </section>
+
+    <!-- MEMBRESÍAS -->
+    <section class="section members" id="membresias">
+      <div class="wrap">
+        <header class="head head--center">
+          <p class="eyebrow reveal">Membresías OG</p>
+          <h2 class="h2 reveal">Tu tarjeta, tus beneficios.</h2>
+          <p class="text text--center reveal">Beneficios para tus compras en la tienda y en los paquetes de servicios OG.</p>
+        </header>
+
+        <div class="members__grid">
+          <article class="member reveal">
+            <button class="card3d card3d--red" type="button" aria-pressed="false" aria-label="Membresía Simplicity: toca para ver sus beneficios">
+              <span class="card3d__float">
+                <span class="card3d__tilt">
+                  <span class="card3d__inner">
+                    <span class="card3d__face card3d__front">
+                      <span class="card3d__arc" aria-hidden="true"></span>
+                      <img class="card3d__logo" src="assets/img/og-logo.png" alt="" width="120" height="48">
+                      <span class="card3d__label">Simplicity card</span>
+                      <svg class="card3d__nfc" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7.5a6.5 6.5 0 0 1 0 9M11.5 5a10 10 0 0 1 0 14M15 3a13.5 13.5 0 0 1 0 18M4.5 10a3 3 0 0 1 0 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                      <span class="card3d__meta"><small>Member since</small>2025</span>
+                      <span class="card3d__meta card3d__meta--thru"><small>Valid thru</small>12/28</span>
+                      <span class="card3d__name">Tu nombre</span>
+                      <span class="card3d__glare" aria-hidden="true"></span>
+                    </span>
+                    <span class="card3d__face card3d__back">
+                      <span class="card3d__back-title">Beneficios únicos · Simplicity</span>
+                      <span class="card3d__benefits card3d__benefits--4">
+                        <span>3% de cashback en carnes, pollo, pescado y salmón</span>
+                        <span>Descuentos por compras en volumen</span>
+                        <span>Cupones adicionales al superar ciertos montos de compra</span>
+                        <span>Ofertas exclusivas en combos semanales</span>
+                      </span>
+                      <span class="card3d__glare" aria-hidden="true"></span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </button>
+            <div class="member__info">
+              <h3>Simplicity</h3>
+              <p class="member__price"><b>$189</b>/mes</p>
+            </div>
+            <p class="member__desc">Ideal si compras principalmente alimentos y aprovechas promociones.</p>
+            <p class="member__hint" aria-hidden="true"><span class="hint-touch">Toca</span><span class="hint-mouse">Haz clic en</span> la tarjeta para ver sus beneficios</p>
+            <a href="#agendar" class="link" data-wa data-service="la membresía Simplicity">Quiero Simplicity <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="member reveal">
+            <button class="card3d card3d--silver" type="button" aria-pressed="false" aria-label="Membresía Levels: toca para ver sus beneficios">
+              <span class="card3d__float">
+                <span class="card3d__tilt">
+                  <span class="card3d__inner">
+                    <span class="card3d__face card3d__front">
+                      <span class="card3d__arc" aria-hidden="true"></span>
+                      <img class="card3d__logo" src="assets/img/og-logo.png" alt="" width="120" height="48">
+                      <span class="card3d__label">Levels card</span>
+                      <svg class="card3d__nfc" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7.5a6.5 6.5 0 0 1 0 9M11.5 5a10 10 0 0 1 0 14M15 3a13.5 13.5 0 0 1 0 18M4.5 10a3 3 0 0 1 0 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                      <span class="card3d__meta"><small>Member since</small>2025</span>
+                      <span class="card3d__meta card3d__meta--thru"><small>Valid thru</small>12/28</span>
+                      <span class="card3d__name">Tu nombre</span>
+                      <span class="card3d__glare" aria-hidden="true"></span>
+                    </span>
+                    <span class="card3d__face card3d__back">
+                      <span class="card3d__back-title">Beneficios únicos · Levels</span>
+                      <span class="card3d__benefits card3d__benefits--6">
+                        <span>3% de cashback en comida, suplementación y ropa*</span>
+                        <span>Cupones de cumpleaños</span>
+                        <span>25% de descuento en envíos a domicilio</span>
+                        <span>Descuentos por compras en volumen</span>
+                        <span>Pedidos recurrentes programados</span>
+                        <span>Cupones adicionales al alcanzar ciertos montos de compra</span>
+                      </span>
+                      <span class="card3d__note">*No incluye paquetes de nutrición, entrenamiento ni masajes.</span>
+                      <span class="card3d__glare" aria-hidden="true"></span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </button>
+            <div class="member__info">
+              <h3>Levels</h3>
+              <p class="member__price"><b>$289</b>/mes</p>
+            </div>
+            <p class="member__desc">Para clientes frecuentes que compran alimentos, ropa y suplementos.</p>
+            <p class="member__hint" aria-hidden="true"><span class="hint-touch">Toca</span><span class="hint-mouse">Haz clic en</span> la tarjeta para ver sus beneficios</p>
+            <a href="#agendar" class="link" data-wa data-service="la membresía Levels">Quiero Levels <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="member reveal">
+            <button class="card3d card3d--black" type="button" aria-pressed="false" aria-label="Membresía Platinum: toca para ver sus beneficios">
+              <span class="card3d__float">
+                <span class="card3d__tilt">
+                  <span class="card3d__inner">
+                    <span class="card3d__face card3d__front">
+                      <span class="card3d__arc" aria-hidden="true"></span>
+                      <img class="card3d__logo" src="assets/img/og-logo.png" alt="" width="120" height="48">
+                      <span class="card3d__label">Platinum card</span>
+                      <svg class="card3d__nfc" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7.5a6.5 6.5 0 0 1 0 9M11.5 5a10 10 0 0 1 0 14M15 3a13.5 13.5 0 0 1 0 18M4.5 10a3 3 0 0 1 0 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                      <span class="card3d__meta"><small>Member since</small>2025</span>
+                      <span class="card3d__meta card3d__meta--thru"><small>Valid thru</small>12/28</span>
+                      <span class="card3d__name">Tu nombre</span>
+                      <span class="card3d__glare" aria-hidden="true"></span>
+                    </span>
+                    <span class="card3d__face card3d__back">
+                      <span class="card3d__back-title">Beneficios únicos · Platinum</span>
+                      <span class="card3d__benefits card3d__benefits--7">
+                        <span>7% de cashback en todos los productos y servicios</span>
+                        <span>Envíos a domicilio gratis</span>
+                        <span>Regalo especial de cumpleaños</span>
+                        <span>Puntos dobles en productos y campañas seleccionadas</span>
+                        <span>Acceso prioritario a preventas y ediciones limitadas</span>
+                        <span>Promociones exclusivas</span>
+                        <span>4% de descuento en suplementación</span>
+                      </span>
+                      <span class="card3d__glare" aria-hidden="true"></span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </button>
+            <div class="member__info">
+              <h3>Platinum</h3>
+              <p class="member__price"><b>$585</b>/mes</p>
+            </div>
+            <p class="member__desc">La opción más completa para maximizar tu cashback y aprovechar beneficios exclusivos.</p>
+            <p class="member__hint" aria-hidden="true"><span class="hint-touch">Toca</span><span class="hint-mouse">Haz clic en</span> la tarjeta para ver sus beneficios</p>
+            <a href="#agendar" class="link" data-wa data-service="la membresía Platinum">Quiero Platinum <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- AGENDAR -->
+    <section class="final" id="agendar">
+      <img class="final__bg" src="assets/img/manos.webp" alt="" loading="lazy" width="900" height="1600">
+      <div class="wrap final__inner">
+        <blockquote class="quote reveal">“Tu mejor versión no se construye con improvisación. Se construye con <em>estrategia, disciplina y constancia.</em>”</blockquote>
+        <ol class="steps reveal">
+          <li><span>01</span>Elige tu objetivo</li>
+          <li><span>02</span>Escríbeme</li>
+          <li><span>03</span>Agenda tu valoración</li>
+        </ol>
+        <div class="ctas ctas--center reveal">
+          <a href="#" class="btn btn--red btn--lg" data-wa>
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+            Agendar por WhatsApp
+          </a>
+        </div>
+        <p class="final__meta reveal">
+          228 404 1575 · <a href="https://www.instagram.com/coach_oscargh/" target="_blank" rel="noopener">@coach_oscargh</a><br>
+          Pago por transferencia SPEI o en efectivo
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <img src="assets/img/og-logo.png" alt="OG" width="48" height="19">
+      <p>© <span id="year">2026</span> OG Fit Club · Oscar García</p>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
