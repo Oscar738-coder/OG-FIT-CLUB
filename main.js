@@ -18,6 +18,29 @@ const CONFIG = {
   onScroll();
   window.addEventListener("scroll", onScroll, { passive: true });
 
+  // Menú móvil
+  const menuBtn = document.getElementById("menuBtn");
+  const menu = document.getElementById("mobileMenu");
+  if (menuBtn && menu) {
+    const setMenu = (open) => {
+      menuBtn.setAttribute("aria-expanded", String(open));
+      menuBtn.setAttribute("aria-label", open ? "Cerrar menú" : "Abrir menú");
+      document.body.classList.toggle("menu-open", open);
+      nav.classList.toggle("is-scrolled", open || window.scrollY > 12);
+      if (open) {
+        menu.hidden = false;
+        requestAnimationFrame(() => menu.classList.add("is-open"));
+      } else {
+        menu.classList.remove("is-open");
+        setTimeout(() => { if (menuBtn.getAttribute("aria-expanded") === "false") menu.hidden = true; }, 350);
+      }
+    };
+    menuBtn.addEventListener("click", () => setMenu(menuBtn.getAttribute("aria-expanded") !== "true"));
+    menu.addEventListener("click", (e) => { if (e.target.closest("a")) setMenu(false); });
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape" && menuBtn.getAttribute("aria-expanded") === "true") { setMenu(false); menuBtn.focus(); } });
+    window.matchMedia("(min-width: 901px)").addEventListener("change", (m) => { if (m.matches) setMenu(false); });
+  }
+
   // Enlaces a WhatsApp (si no hay número configurado, llevan a la sección de contacto)
   const waLink = (interes) => {
     const text = interes ? `${CONFIG.mensajeBase} Me interesa ${interes}.` : CONFIG.mensajeBase;
