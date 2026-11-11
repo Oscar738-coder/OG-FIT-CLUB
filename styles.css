@@ -172,13 +172,16 @@ ul, ol { padding: 0; list-style: none; }
 .feature p { color: var(--muted); font-size: 15px; margin-top: 8px; }
 
 /* Store */
-.store { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(40px, 8vw, 120px); align-items: end; }
-.rows { border-top: 1px solid var(--line); }
-.rows li { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--line); }
-.rows span { font-weight: 500; }
-.rows span small { display: block; color: var(--dim); font-size: 13px; }
-.rows b { font-weight: 700; white-space: nowrap; }
-.rows b small { color: var(--dim); font-weight: 500; font-size: 13px; }
+.store__head { display: grid; grid-template-columns: 1fr 1fr; gap: 24px clamp(40px, 8vw, 120px); align-items: end; }
+.store__head .text { margin-top: 0; }
+.products { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.product { padding: 28px 24px 26px; border: 1px solid var(--line); border-radius: 22px; background: radial-gradient(70% 60% at 50% 38%, color-mix(in srgb, var(--tint) 14%, transparent), transparent 70%); transition: border-color .3s, transform .4s var(--ease); }
+.product:hover { border-color: var(--line-2); transform: translateY(-4px); }
+.product__art { display: block; width: min(160px, 70%); height: auto; margin: 0 auto 18px; overflow: visible; transition: transform .5s var(--ease); }
+.product:hover .product__art { transform: scale(1.05) rotate(-2deg); }
+.product h3 { font-family: var(--f-display); font-weight: 800; font-size: 19px; letter-spacing: -0.01em; }
+.product p { color: var(--muted); font-size: 14px; margin-top: 2px; }
+.store__cta { margin-top: 32px; text-align: center; }
 
 /* Memberships · 3D cards */
 .text--center { margin-inline: auto; text-align: center; }
@@ -293,7 +296,8 @@ ul, ol { padding: 0; list-style: none; }
 }
 @media (max-width: 900px) {
   .nav__links { display: none; }
-  .hero__grid, .about, .store { grid-template-columns: 1fr; }
+  .hero__grid, .about, .store__head { grid-template-columns: 1fr; }
+  .products { grid-template-columns: repeat(2, 1fr); gap: 12px; }
   .hero__grid { gap: 64px; }
   .about__photo { max-width: 420px; }
   .features {
@@ -308,6 +312,9 @@ ul, ol { padding: 0; list-style: none; }
   .wrap { padding-inline: 16px; }
   .hero { padding-top: 112px; }
   .tiers { grid-template-columns: 1fr; }
+  .product { padding: 20px 16px; }
+  .product h3 { font-size: 16px; }
+  .product p { font-size: 13px; }
   .features { margin-inline: -16px; padding-inline: 16px; }
   .steps { flex-direction: column; align-items: center; }
   .footer__inner { flex-direction: column; }
