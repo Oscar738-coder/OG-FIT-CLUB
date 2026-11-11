@@ -19,16 +19,16 @@ const CONFIG = {
   window.addEventListener("scroll", onScroll, { passive: true });
 
   // Enlaces a WhatsApp (si no hay número configurado, llevan a la sección de contacto)
-  const waLink = (plan) => {
-    const text = plan ? `${CONFIG.mensajeBase} Me interesa la membresía ${plan}.` : CONFIG.mensajeBase;
+  const waLink = (interes) => {
+    const text = interes ? `${CONFIG.mensajeBase} Me interesa ${interes}.` : CONFIG.mensajeBase;
     return `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(text)}`;
   };
   document.querySelectorAll("[data-wa]").forEach((a) => {
     if (!CONFIG.whatsapp) {
-      if (a.getAttribute("href") === "#") a.setAttribute("href", "#contacto");
+      if (a.getAttribute("href") === "#") a.setAttribute("href", "#agendar");
       return;
     }
-    a.href = waLink(a.dataset.plan);
+    a.href = waLink(a.dataset.service);
     a.target = "_blank";
     a.rel = "noopener";
   });

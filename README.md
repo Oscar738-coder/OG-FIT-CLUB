@@ -16,7 +16,11 @@ python3 -m http.server 8000
   Los botones abren WhatsApp con un mensaje ya escrito que incluye la membresía elegida.
 - Instagram: [@coach_oscargh](https://www.instagram.com/coach_oscargh/)
 
-Los beneficios de cada membresía están en `index.html`, sección `#membresias`.
+## Precios
+
+- Planes de servicio (`#planes`): Esencial $500, Force $400, Pro $650 y Elite $1,699 MXN/mes,
+  con 10% de descuento por compromiso trimestral pagado por adelantado.
+- Membresías OG para tienda y paquetes (`#membresias`): Simplicity $189, Levels $289 y Platinum $585 al mes.
 
 ## Estructura
 
