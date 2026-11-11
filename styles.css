@@ -170,7 +170,7 @@ ul, ol { padding: 0; list-style: none; }
 
 /* About */
 .about { display: grid; grid-template-columns: .8fr 1fr; gap: clamp(48px, 8vw, 120px); align-items: center; }
-.about__photo { width: 100%; height: auto; }
+.about__photo { width: 100%; height: auto; border-radius: 20px; box-shadow: 0 0 0 1px var(--line), 0 40px 80px -40px rgba(0,0,0,.9); }
 .focus { margin-top: 36px; border-top: 1px solid var(--line); }
 .focus li { padding: 16px 0; border-bottom: 1px solid var(--line); font-weight: 600; }
 
