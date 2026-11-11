@@ -70,7 +70,7 @@ ul, ol { padding: 0; list-style: none; }
 .btn:active { transform: scale(.98); }
 .btn--red { background: var(--red); color: #fff; }
 .btn--red:hover { background: #f23243; }
-.btn--ghost { border: 1px solid var(--line-2); color: var(--text); }
+.btn--ghost { border: 1px solid var(--line-2); color: var(--text); background: transparent; cursor: pointer; }
 .btn--ghost:hover { border-color: rgba(255,255,255,.4); }
 .btn--sm { --h: 38px; padding: 0 18px; font-size: 14px; }
 .btn--lg { --h: 58px; padding: 0 32px; font-size: 16px; }
@@ -173,6 +173,19 @@ ul, ol { padding: 0; list-style: none; }
 .about__photo { width: 100%; height: auto; }
 .focus { margin-top: 36px; border-top: 1px solid var(--line); }
 .focus li { padding: 16px 0; border-bottom: 1px solid var(--line); font-weight: 600; }
+
+/* Cambios */
+.changes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.change figure { display: grid; grid-template-columns: 1fr 1fr; gap: 3px; border-radius: 20px; overflow: hidden; background: var(--line); box-shadow: 0 0 0 1px var(--line); }
+.change__half { position: relative; display: block; overflow: hidden; }
+.change__half img { width: 100%; aspect-ratio: 2 / 3; object-fit: cover; transition: transform .8s var(--ease); }
+.change:hover .change__half img { transform: scale(1.03); }
+.change__half b {
+  position: absolute; left: 10px; bottom: 10px; font-size: 10.5px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+  color: #fff; background: rgba(5,5,5,.6); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); padding: 5px 9px; border-radius: 999px;
+}
+.change__half + .change__half b { background: var(--red); }
+.changes__more { margin-top: 40px; text-align: center; }
 
 /* Plans */
 .tiers { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; align-items: stretch; }
@@ -386,6 +399,7 @@ ul, ol { padding: 0; list-style: none; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 1040px) {
+  .changes { grid-template-columns: repeat(2, 1fr); }
   .tiers { grid-template-columns: repeat(2, 1fr); gap: 28px 16px; }
   .tier--featured { translate: none; }
   .tier--featured:hover { translate: 0 -6px; }
@@ -410,6 +424,7 @@ ul, ol { padding: 0; list-style: none; }
   body { font-size: 16px; }
   .wrap { padding-inline: 16px; }
   .tiers { grid-template-columns: 1fr; }
+  .changes { grid-template-columns: 1fr; gap: 16px; }
   .tier__tag { min-height: 0; }
   .extras { grid-template-columns: 1fr; }
   .product { padding: 20px 16px; }

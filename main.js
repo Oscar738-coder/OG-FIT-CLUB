@@ -55,6 +55,21 @@ const CONFIG = {
     items.forEach((el) => el.classList.add("is-in"));
   }
 
+  // Cambios: mostrar el resto de las fotos
+  const moreBtn = document.getElementById("moreChanges");
+  if (moreBtn) {
+    moreBtn.addEventListener("click", () => {
+      const open = moreBtn.getAttribute("aria-expanded") === "true";
+      document.querySelectorAll(".change[data-more]").forEach((el) => {
+        el.hidden = open;
+        if (!open) el.classList.add("is-in");
+      });
+      moreBtn.setAttribute("aria-expanded", String(!open));
+      moreBtn.textContent = open ? "Ver más cambios" : "Ver menos";
+      if (open) document.getElementById("cambios").scrollIntoView({ behavior: "smooth" });
+    });
+  }
+
   // Planes: foco de luz que sigue al cursor
   document.querySelectorAll(".tier").forEach((t) => {
     t.addEventListener("pointermove", (e) => {
