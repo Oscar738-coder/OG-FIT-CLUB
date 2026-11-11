@@ -23,43 +23,33 @@
   <header class="nav" id="nav">
     <div class="wrap nav__inner">
       <a href="#inicio" class="brand" aria-label="OG Fit Club, inicio">
-        <img src="assets/img/og-logo.png" alt="" width="68" height="27">
-        <span class="brand__name">Fit Club</span>
+        <img src="assets/img/og-logo.png" alt="" width="62" height="25">
       </a>
       <nav class="nav__links" aria-label="Principal">
         <a href="#sobre-mi">Sobre mí</a>
         <a href="#planes">Planes</a>
-        <a href="#app">La app</a>
+        <a href="#app">App</a>
         <a href="#tienda">Tienda</a>
       </nav>
-      <a href="#contacto" class="btn btn--sm btn--red" data-wa>Quiero empezar</a>
+      <a href="#agendar" class="btn btn--sm btn--red" data-wa>Agendar</a>
     </div>
   </header>
 
   <main id="contenido">
     <!-- HERO -->
     <section class="hero" id="inicio">
-      <div class="hero__glow" aria-hidden="true"></div>
       <div class="wrap hero__grid">
         <div class="hero__copy">
-          <p class="kicker reveal">Oscar García · Nutrición deportiva y entrenamiento</p>
+          <p class="eyebrow reveal">Oscar García · Nutrición deportiva y entrenamiento</p>
           <h1 class="hero__title reveal">
             Come, entrena y progresa
-            <span class="hero__accent">con un solo plan.</span>
+            <span class="accent">con un solo plan.</span>
           </h1>
-          <p class="hero__lead reveal">
-            Tu alimentación, tu entrenamiento y tu progreso viven en un mismo lugar,
-            hechos a tu medida. Vamos paso a paso y a tu ritmo: yo te acompaño en cada uno.
-          </p>
-          <div class="hero__ctas reveal">
+          <p class="lead reveal">Nutrición y entrenamiento hechos a tu medida, con seguimiento 1 a 1. Paso a paso y a tu ritmo.</p>
+          <div class="ctas reveal">
             <a href="#planes" class="btn btn--red">Ver planes</a>
-            <a href="#app" class="btn btn--ghost">Conoce la app</a>
+            <a href="#app" class="link">Conoce la app <span aria-hidden="true">→</span></a>
           </div>
-          <ul class="hero__pills reveal" aria-label="Lo que incluye">
-            <li>Nutrición personalizada</li>
-            <li>Rutina periodizada</li>
-            <li>Seguimiento 1 a 1</li>
-          </ul>
         </div>
 
         <div class="hero__media reveal">
@@ -68,337 +58,205 @@
                    poster="assets/img/poster.webp" autoplay muted loop playsinline preload="metadata"
                    aria-label="Recorrido por la app de OG Fit Club"></video>
             <button class="sound" id="soundBtn" type="button" aria-pressed="false">
-              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M3 9v6h4l5 4V5L7 9H3z"/><path class="sound__waves" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M16 8.5a5 5 0 0 1 0 7M18.8 5.8a9 9 0 0 1 0 12.4"/><path class="sound__x" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="m16 9 6 6m0-6-6 6"/></svg>
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M3 9v6h4l5 4V5L7 9H3z"/><path class="sound__waves" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M16 8.5a5 5 0 0 1 0 7M18.8 5.8a9 9 0 0 1 0 12.4"/><path class="sound__x" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="m16 9 6 6m0-6-6 6"/></svg>
               <span>Activar sonido</span>
             </button>
           </div>
         </div>
       </div>
-      <div class="ticker" aria-hidden="true">
-        <div class="ticker__track">
-          <span>Nutrición</span><i></i><span>Entrenamiento</span><i></i><span>Progreso</span><i></i><span>Tienda</span><i></i><span>Membresía</span><i></i>
-          <span>Nutrición</span><i></i><span>Entrenamiento</span><i></i><span>Progreso</span><i></i><span>Tienda</span><i></i><span>Membresía</span><i></i>
-        </div>
-      </div>
     </section>
 
     <!-- SOBRE MÍ -->
-    <section class="section about" id="sobre-mi">
-      <div class="wrap about__grid">
-        <div class="about__media reveal">
-          <img class="about__photo" src="assets/img/oscar.webp" alt="Oscar García en el gimnasio" width="900" height="1200" loading="lazy">
-          <img class="about__photo about__photo--small" src="assets/img/oscar-espalda.webp" alt="Oscar García mostrando su espalda en el gimnasio" width="700" height="850" loading="lazy">
-        </div>
-        <div>
-          <p class="label reveal">Sobre mí · Mi enfoque</p>
+    <section class="section" id="sobre-mi">
+      <div class="wrap about">
+        <img class="about__photo reveal" src="assets/img/oscar.webp" alt="Oscar García en el gimnasio" width="900" height="1200" loading="lazy">
+        <div class="about__copy">
+          <p class="eyebrow reveal">Sobre mí</p>
           <h2 class="h2 reveal">Estrategia, no dietas extremas.</h2>
-          <p class="body reveal">
-            Trabajo con personas que buscan mejorar su estética y composición corporal,
-            potenciar su rendimiento deportivo y construir hábitos sostenibles para alcanzar
-            su mejor versión física y mental.
+          <p class="text reveal">
+            Trabajo con personas que buscan mejorar su composición corporal, su rendimiento
+            y sus hábitos. Mi método se basa en estrategia, evidencia científica,
+            personalización y acompañamiento constante.
           </p>
-          <p class="body reveal">
-            Mi método se basa en <strong>estrategia, evidencia científica, personalización y
-            acompañamiento constante</strong>, no en dietas extremas ni soluciones genéricas.
-          </p>
-          <ol class="pillars">
-            <li class="reveal"><span>01</span>Estética y composición corporal</li>
-            <li class="reveal"><span>02</span>Rendimiento deportivo</li>
-            <li class="reveal"><span>03</span>Hábitos sostenibles</li>
-            <li class="reveal"><span>04</span>Tu mejor versión</li>
-          </ol>
+          <ul class="focus reveal">
+            <li>Estética y composición corporal</li>
+            <li>Rendimiento deportivo</li>
+            <li>Hábitos sostenibles</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <!-- PLANES DE SERVICIO -->
-    <section class="section services" id="planes">
+    <!-- PLANES -->
+    <section class="section" id="planes">
       <div class="wrap">
-        <header class="section__head section__head--center">
-          <p class="label reveal">Servicios</p>
+        <header class="head head--center">
+          <p class="eyebrow reveal">Planes</p>
           <h2 class="h2 reveal">Elige tu punto de partida.</h2>
-          <p class="body reveal">Precios en pesos mexicanos, pago mensual.</p>
         </header>
 
         <div class="tiers">
           <article class="tier reveal">
             <p class="tier__type">Nutrición</p>
-            <h3>Plan Esencial</h3>
-            <p class="price"><b>$500</b><span>MXN/mes</span></p>
-            <p class="tier__desc">Ideal para mejorar hábitos, composición corporal o rendimiento mediante la alimentación.</p>
-            <ul class="checks checks--sm">
-              <li>Valoración nutricional cada 15 días</li>
+            <h3 class="tier__name">Esencial</h3>
+            <p class="price"><b>$500</b> MXN/mes</p>
+            <ul class="list">
               <li>Plan de alimentación personalizado</li>
-              <li>Mediciones antropométricas quincenales</li>
-              <li>Guía digital de equivalencias, porciones y sustitutos</li>
+              <li>Valoración y mediciones cada 15 días</li>
+              <li>Guía de equivalencias y sustitutos</li>
               <li>Seguimiento 1 a 1 vía chat</li>
             </ul>
-            <a href="#agendar" class="btn btn--ghost btn--block" data-wa data-service="el Plan Esencial">Quiero el Esencial</a>
+            <a href="#agendar" class="btn btn--ghost btn--block" data-wa data-service="el Plan Esencial">Elegir</a>
           </article>
 
           <article class="tier reveal">
             <p class="tier__type">Entrenamiento</p>
-            <h3>Plan Force</h3>
-            <p class="price"><b>$400</b><span>MXN/mes</span></p>
-            <p class="tier__desc">Para quienes ya tienen cubierta su alimentación y necesitan una estructura profesional de entrenamiento.</p>
-            <ul class="checks checks--sm">
-              <li>Rutina mensual estructurada y periodizada</li>
-              <li>Enfoque según tu objetivo: hipertrofia, fuerza, funcional o híbrido</li>
+            <h3 class="tier__name">Force</h3>
+            <p class="price"><b>$400</b> MXN/mes</p>
+            <ul class="list">
+              <li>Rutina mensual periodizada</li>
+              <li>Hipertrofia, fuerza, funcional o híbrido</li>
               <li>Ajustes de progresión mensuales</li>
             </ul>
-            <a href="#agendar" class="btn btn--ghost btn--block" data-wa data-service="el Plan Force">Quiero el Force</a>
+            <a href="#agendar" class="btn btn--ghost btn--block" data-wa data-service="el Plan Force">Elegir</a>
           </article>
 
           <article class="tier tier--featured reveal">
-            <p class="tier__badge">Recomendado</p>
+            <span class="badge">Recomendado</span>
             <p class="tier__type">Nutrición + entrenamiento</p>
-            <h3>Plan Pro</h3>
-            <p class="price"><b>$650</b><span>MXN/mes</span></p>
-            <p class="tier__desc">La opción más completa para transformar tu físico, integrando nutrición y entrenamiento bajo una misma estrategia.</p>
-            <ul class="checks checks--sm">
-              <li>Todo lo del Plan Esencial</li>
-              <li>Todo lo del Plan Force</li>
+            <h3 class="tier__name">Pro</h3>
+            <p class="price"><b>$650</b> MXN/mes</p>
+            <ul class="list">
+              <li>Todo lo del Esencial y el Force</li>
               <li>Plicometría avanzada</li>
-              <li>Tabla personalizada de equivalencias y porciones</li>
+              <li>Tabla personalizada de porciones</li>
+              <li class="list__note">Ahorras $250 al mes</li>
             </ul>
-            <p class="tier__save">Ahorras $250 al mes frente a contratar ambos por separado</p>
-            <a href="#agendar" class="btn btn--red btn--block" data-wa data-service="el Plan Pro">Quiero el Pro</a>
+            <a href="#agendar" class="btn btn--red btn--block" data-wa data-service="el Plan Pro">Elegir</a>
           </article>
 
-          <article class="tier tier--elite reveal">
-            <p class="tier__badge tier__badge--elite">Premium</p>
-            <p class="tier__type">Preparación de culturismo</p>
-            <h3>Plan Elite</h3>
-            <p class="price"><b>$1,699</b><span>MXN/mes</span></p>
-            <p class="tier__desc">Servicio especializado para atletas o personas en preparación competitiva.</p>
-            <ul class="checks checks--sm">
-              <li>Valoraciones y ajustes estratégicos según la etapa</li>
-              <li>Nutrición deportiva avanzada enfocada en estética y rendimiento</li>
-              <li>Rutina de entrenamiento de alta intensidad</li>
+          <article class="tier reveal">
+            <p class="tier__type">Culturismo</p>
+            <h3 class="tier__name">Elite</h3>
+            <p class="price"><b>$1,699</b> MXN/mes</p>
+            <ul class="list">
+              <li>Nutrición deportiva avanzada</li>
+              <li>Entrenamiento de alta intensidad</li>
               <li>Plicometría estricta</li>
               <li>Seguimiento prioritario 24/7</li>
-              <li>Asesoría en Peak Week y puesta a punto</li>
+              <li>Asesoría en Peak Week</li>
             </ul>
-            <a href="#agendar" class="btn btn--ghost btn--block" data-wa data-service="el Plan Elite">Quiero el Elite</a>
+            <a href="#agendar" class="btn btn--ghost btn--block" data-wa data-service="el Plan Elite">Elegir</a>
           </article>
         </div>
 
-        <aside class="promo reveal" aria-label="Beneficio por compromiso trimestral">
-          <div class="promo__badge"><b>10%</b><span>de descuento</span></div>
-          <div>
-            <p class="label">Beneficio por compromiso</p>
-            <h3 class="promo__title">Compromiso trimestral</h3>
-            <p class="promo__text">Los cambios reales en la composición corporal requieren constancia. Contrata un programa mínimo de 3 meses, paga por adelantado y obtén <strong>10% de descuento</strong> en cualquiera de los planes.</p>
-          </div>
-          <a href="#agendar" class="btn btn--red" data-wa data-service="el compromiso trimestral con 10% de descuento">Lo quiero</a>
-        </aside>
+        <p class="promo reveal"><b>10% de descuento</b> en cualquier plan al pagar 3 meses por adelantado.</p>
       </div>
     </section>
 
-    <!-- APP: FEATURES -->
+    <!-- APP -->
     <section class="section" id="app">
       <div class="wrap">
-        <header class="section__head">
-          <p class="label reveal">La app</p>
-          <h2 class="h2 reveal">Todo tu proceso en la palma de tu mano.</h2>
-          <p class="body reveal">Tu plan vive en la app de OG: lo que comes, lo que entrenas y cómo vas avanzando.</p>
+        <header class="head">
+          <p class="eyebrow reveal">La app</p>
+          <h2 class="h2 reveal">Todo tu proceso,<br>en un solo lugar.</h2>
         </header>
 
-        <!-- Nutrición -->
-        <article class="feature">
-          <div class="feature__media reveal">
-            <img class="phone" src="assets/img/nutricion.webp" alt="Pantalla Mi dieta: progreso del día, macros y comidas con horario" width="760" height="1440" loading="lazy">
-          </div>
-          <div class="feature__copy">
-            <p class="tag reveal">Nutrición</p>
-            <h3 class="h3 reveal">Tu dieta, comida por comida.</h3>
-            <p class="body reveal">Cada comida con su horario, sus alimentos y sus macros. Ves al momento cuánta proteína, carbohidratos y grasa llevas en el día.</p>
-            <ul class="checks reveal">
-              <li>Plan según tu objetivo, como déficit calórico o ganancia muscular</li>
-              <li><strong>¿No tienes un ingrediente?</strong> La app te propone una alternativa</li>
-              <li>Marca cada comida como <em>la cumplí</em> o <em>no la hice</em>: sin culpas, solo datos</li>
-            </ul>
-          </div>
-        </article>
-
-        <!-- Entrenamiento -->
-        <article class="feature feature--flip">
-          <div class="feature__media reveal">
-            <img class="phone" src="assets/img/entrenamiento.webp" alt="Pantalla de Press militar con 1RM estimado y tabla de pesos de trabajo" width="760" height="1440" loading="lazy">
-            <img class="float float--br" src="assets/img/descanso.webp" alt="Registro de series con aviso “Superaste la vez pasada” y temporizador de descanso" width="780" height="1020" loading="lazy">
-          </div>
-          <div class="feature__copy">
-            <p class="tag reveal">Entrenamiento</p>
-            <h3 class="h3 reveal">Sabes exactamente cuánto cargar.</h3>
-            <p class="body reveal">Calculo tu 1RM estimado y de ahí salen tus pesos de trabajo para cada rango de repeticiones. Llegas al gym sin adivinar.</p>
-            <ul class="checks reveal">
-              <li>Registra peso y repeticiones de cada serie</li>
-              <li>Te avisa cuando <strong>superas la vez pasada</strong></li>
-              <li>Temporizador de descanso integrado</li>
-            </ul>
-          </div>
-        </article>
-
-        <!-- Demostración -->
-        <article class="feature">
-          <div class="feature__media reveal">
-            <img class="phone" src="assets/img/demo.webp" alt="Demostración del ejercicio Remo sentado agarre cerrado con los músculos trabajados" width="760" height="1440" loading="lazy">
-          </div>
-          <div class="feature__copy">
-            <p class="tag reveal">Demostración de ejercicios</p>
-            <h3 class="h3 reveal">Técnica clara, músculo por músculo.</h3>
-            <p class="body reveal">Cada ejercicio trae su demostración con los músculos que trabaja resaltados. Si dudas, la respuesta está a un toque.</p>
-          </div>
-        </article>
-
-        <!-- Progreso -->
-        <article class="feature feature--flip">
-          <div class="feature__media feature__media--duo reveal">
-            <img class="phone" src="assets/img/progreso.webp" alt="Gráficas de progreso de medidas de cintura y cadera" width="760" height="1440" loading="lazy">
-            <img class="phone phone--back" src="assets/img/fuerza.webp" alt="Lista de mejores marcas de fuerza por ejercicio" width="760" height="1440" loading="lazy">
-          </div>
-          <div class="feature__copy">
-            <p class="tag reveal">Progreso</p>
-            <h3 class="h3 reveal">Tu avance, en gráficas que se entienden.</h3>
-            <p class="body reveal">Medidas corporales, tu fuerza en cada ejercicio y el volumen por sesión. Ves la línea subir y sabes que vas bien.</p>
-            <ul class="checks reveal">
-              <li>Cintura, cadera y más medidas en el tiempo</li>
-              <li>Mejor marca por ejercicio</li>
-              <li>1RM estimado y volumen por sesión</li>
-            </ul>
-          </div>
-        </article>
+        <div class="features">
+          <figure class="feature reveal">
+            <img class="phone" src="assets/img/nutricion.webp" alt="Pantalla Mi dieta con progreso del día y macros" width="760" height="1440" loading="lazy">
+            <figcaption>
+              <h3>Nutrición</h3>
+              <p>Tus comidas con horario y macros. Si te falta un ingrediente, te da una alternativa.</p>
+            </figcaption>
+          </figure>
+          <figure class="feature reveal">
+            <img class="phone" src="assets/img/entrenamiento.webp" alt="Pantalla de Press militar con 1RM y pesos de trabajo" width="760" height="1440" loading="lazy">
+            <figcaption>
+              <h3>Entrenamiento</h3>
+              <p>Tus pesos de trabajo calculados, registro de series y demostración de cada ejercicio.</p>
+            </figcaption>
+          </figure>
+          <figure class="feature reveal">
+            <img class="phone" src="assets/img/progreso.webp" alt="Gráficas de progreso de cintura y cadera" width="760" height="1440" loading="lazy">
+            <figcaption>
+              <h3>Progreso</h3>
+              <p>Medidas, fuerza y volumen en gráficas claras. Ves cómo avanzas cada semana.</p>
+            </figcaption>
+          </figure>
+        </div>
       </div>
     </section>
 
-    <!-- TIENDA -->
-    <section class="section store" id="tienda">
-      <div class="wrap store__grid">
-        <div class="store__copy">
-          <p class="label reveal">Tienda OG</p>
+    <!-- TIENDA + MEMBRESÍAS -->
+    <section class="section" id="tienda">
+      <div class="wrap store">
+        <div>
+          <p class="eyebrow reveal">Tienda OG</p>
           <h2 class="h2 reveal">La comida de tu plan, sin vueltas.</h2>
-          <p class="body reveal">Pide proteína y básicos desde la app, por kilo o medio kilo. Revisamos tu pedido y acordamos contigo la entrega. El pago es directo conmigo, como siempre.</p>
-          <ul class="menu reveal" aria-label="Algunos productos">
-            <li><span>Carne molida de res magra</span><b>$230<small>/kg</small></b></li>
-            <li><span>Pechuga de pollo</span><b>$185<small>/kg</small></b></li>
-            <li><span>Salmón</span><b>$330<small>/kg</small></b></li>
-            <li><span>Bolsas de licuado verde <small>Paquete de 7 bolsas · 250 ml c/u</small></span><b>$165<small>/paquete</small></b></li>
+          <p class="text reveal">Pide desde la app. Reviso tu pedido y acordamos la entrega contigo.</p>
+          <ul class="rows reveal" aria-label="Productos">
+            <li><span>Carne molida de res magra</span><b>$230 <small>/kg</small></b></li>
+            <li><span>Pechuga de pollo</span><b>$185 <small>/kg</small></b></li>
+            <li><span>Salmón</span><b>$330 <small>/kg</small></b></li>
+            <li><span>Licuado verde <small>7 bolsas de 250 ml</small></span><b>$165</b></li>
           </ul>
         </div>
-        <div class="store__media reveal">
-          <img class="phone" src="assets/img/tienda.webp" alt="Tienda en la app con carne molida, pechuga de pollo y salmón" width="760" height="1440" loading="lazy">
-          <img class="float float--bl" src="assets/img/pedido.webp" alt="Resumen de pedido con total de $487.50" width="720" height="720" loading="lazy">
+        <div id="membresias">
+          <p class="eyebrow reveal">Membresías OG</p>
+          <p class="text text--sm reveal">Beneficios para tus compras en la tienda y en los paquetes de servicios.</p>
+          <ul class="cards reveal">
+            <li>
+              <span class="chip chip--red" aria-hidden="true"></span>
+              <span class="cards__name">Simplicity</span>
+              <b>$189<small>/mes</small></b>
+              <a href="#agendar" class="link" data-wa data-service="la membresía Simplicity" aria-label="Beneficios de Simplicity">Beneficios <span aria-hidden="true">→</span></a>
+            </li>
+            <li>
+              <span class="chip chip--silver" aria-hidden="true"></span>
+              <span class="cards__name">Levels</span>
+              <b>$289<small>/mes</small></b>
+              <a href="#agendar" class="link" data-wa data-service="la membresía Levels" aria-label="Beneficios de Levels">Beneficios <span aria-hidden="true">→</span></a>
+            </li>
+            <li>
+              <span class="chip chip--black" aria-hidden="true"></span>
+              <span class="cards__name">Platinum</span>
+              <b>$585<small>/mes</small></b>
+              <a href="#agendar" class="link" data-wa data-service="la membresía Platinum" aria-label="Beneficios de Platinum">Beneficios <span aria-hidden="true">→</span></a>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <!-- MEMBRESÍAS OG (tienda y paquetes) -->
-    <section class="section" id="membresias">
-      <div class="wrap">
-        <header class="section__head section__head--center">
-          <p class="label reveal">Membresías OG</p>
-          <h2 class="h2 reveal">Más beneficios en la tienda y en tus paquetes.</h2>
-          <p class="body reveal">Las membresías son aparte de tu plan de servicio: te dan acceso a beneficios para tus compras en la tienda y en los paquetes de servicios OG.</p>
-        </header>
-
-        <div class="plans">
-          <article class="plan reveal">
-            <div class="card card--red" aria-hidden="true">
-              <img src="assets/img/og-logo.png" alt=""><span>Simplicity card</span>
-            </div>
-            <h3>Simplicity</h3>
-            <p class="price"><b>$189</b><span>/mes</span></p>
-            <a href="#agendar" class="btn btn--ghost btn--block" data-wa data-service="la membresía Simplicity">Conoce sus beneficios</a>
-          </article>
-
-          <article class="plan reveal">
-            <div class="card card--silver" aria-hidden="true">
-              <img src="assets/img/og-logo.png" alt=""><span>Levels card</span>
-            </div>
-            <h3>Levels</h3>
-            <p class="price"><b>$289</b><span>/mes</span></p>
-            <a href="#agendar" class="btn btn--ghost btn--block" data-wa data-service="la membresía Levels">Conoce sus beneficios</a>
-          </article>
-
-          <article class="plan reveal">
-            <div class="card card--black" aria-hidden="true">
-              <img src="assets/img/og-logo.png" alt=""><span>Platinum card</span>
-            </div>
-            <h3>Platinum</h3>
-            <p class="price"><b>$585</b><span>/mes</span></p>
-            <a href="#agendar" class="btn btn--ghost btn--block" data-wa data-service="la membresía Platinum">Conoce sus beneficios</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- CÓMO AGENDAR -->
-    <section class="section schedule" id="agendar">
-      <div class="wrap schedule__grid">
-        <div>
-          <p class="label reveal">Siguiente paso</p>
-          <h2 class="h2 reveal">¿Cómo agendar?</h2>
-          <p class="body reveal">En tres pasos empezamos a construir tu estrategia.</p>
-          <div class="pay reveal">
-            <p class="pay__title">Métodos de pago</p>
-            <p>Transferencia bancaria / SPEI (Mercado Pago) o efectivo. Te comparto los datos por WhatsApp al agendar.</p>
-          </div>
-        </div>
-        <ol class="steps">
-          <li class="step reveal">
-            <span class="step__n">01</span>
-            <div>
-              <h3>Elige tu objetivo</h3>
-              <p>Estética, composición corporal, rendimiento, entrenamiento o preparación competitiva.</p>
-            </div>
-          </li>
-          <li class="step reveal">
-            <span class="step__n">02</span>
-            <div>
-              <h3>Contáctame</h3>
-              <p>Escríbeme por WhatsApp al <a class="inline-link" href="#" data-wa>228 404 1575</a>.</p>
-            </div>
-          </li>
-          <li class="step reveal">
-            <span class="step__n">03</span>
-            <div>
-              <h3>Agenda tu valoración</h3>
-              <p>Comenzamos a estructurar una estrategia personalizada para ti.</p>
-            </div>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- CTA FINAL -->
-    <section class="final" id="contacto">
+    <!-- AGENDAR -->
+    <section class="final" id="agendar">
       <img class="final__bg" src="assets/img/manos.webp" alt="" loading="lazy" width="900" height="1600">
       <div class="wrap final__inner">
-        <img class="final__logo reveal" src="assets/img/og-logo.png" alt="OG" width="160" height="64">
-        <blockquote class="final__quote reveal">“Tu mejor versión no se construye con improvisación. Se construye con <em>estrategia, disciplina y constancia.</em>”</blockquote>
-        <p class="body reveal">¿Listo para comenzar? Agenda tu valoración.</p>
-        <div class="hero__ctas hero__ctas--center reveal">
+        <blockquote class="quote reveal">“Tu mejor versión no se construye con improvisación. Se construye con <em>estrategia, disciplina y constancia.</em>”</blockquote>
+        <ol class="steps reveal">
+          <li><span>01</span>Elige tu objetivo</li>
+          <li><span>02</span>Escríbeme</li>
+          <li><span>03</span>Agenda tu valoración</li>
+        </ol>
+        <div class="ctas ctas--center reveal">
           <a href="#" class="btn btn--red btn--lg" data-wa>
             <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
             Agendar por WhatsApp
           </a>
-          <a href="https://www.instagram.com/coach_oscargh/" class="btn btn--ghost btn--lg" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg>
-            @coach_oscargh
-          </a>
         </div>
+        <p class="final__meta reveal">
+          228 404 1575 · <a href="https://www.instagram.com/coach_oscargh/" target="_blank" rel="noopener">@coach_oscargh</a><br>
+          Pago por transferencia SPEI o en efectivo
+        </p>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="wrap footer__inner">
-      <a href="#inicio" class="brand" aria-label="OG Fit Club, inicio">
-        <img src="assets/img/og-logo.png" alt="" width="58" height="23">
-        <span class="brand__name">Fit Club</span>
-      </a>
-      <p>OG · Nutrición deportiva · Oscar García · <a class="footer__link" href="https://www.instagram.com/coach_oscargh/" target="_blank" rel="noopener">@coach_oscargh</a></p>
-      <p class="footer__copy">© <span id="year">2026</span> OG Fit Club</p>
+      <img src="assets/img/og-logo.png" alt="OG" width="48" height="19">
+      <p>© <span id="year">2026</span> OG Fit Club · Oscar García</p>
     </div>
   </footer>
 
