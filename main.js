@@ -55,6 +55,40 @@ const CONFIG = {
     items.forEach((el) => el.classList.add("is-in"));
   }
 
+  // Tarjetas de membresía en 3D: inclinación con el cursor y giro al tocar
+  document.querySelectorAll(".card3d").forEach((card) => {
+    const tilt = card.querySelector(".card3d__tilt");
+    const glares = card.querySelectorAll(".card3d__glare");
+    const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    if (finePointer && !reduce) {
+      card.addEventListener("pointermove", (e) => {
+        const r = card.getBoundingClientRect();
+        const x = (e.clientX - r.left) / r.width;
+        const y = (e.clientY - r.top) / r.height;
+        card.classList.add("is-active");
+        tilt.style.setProperty("--ry", `${(x - 0.5) * 26}deg`);
+        tilt.style.setProperty("--rx", `${(0.5 - y) * 20}deg`);
+        const flipped = card.getAttribute("aria-pressed") === "true";
+        glares.forEach((g) => {
+          g.style.setProperty("--gx", `${(flipped ? 1 - x : x) * 100}%`);
+          g.style.setProperty("--gy", `${y * 100}%`);
+        });
+      });
+      card.addEventListener("pointerleave", () => {
+        card.classList.remove("is-active");
+        tilt.style.setProperty("--rx", "0deg");
+        tilt.style.setProperty("--ry", "0deg");
+      });
+    }
+
+    card.addEventListener("click", () => {
+      const flipped = card.getAttribute("aria-pressed") === "true";
+      card.setAttribute("aria-pressed", String(!flipped));
+    });
+  });
+
   // Video del hero: botón de sonido y pausa cuando no se ve
   const video = document.getElementById("heroVideo");
   const btn = document.getElementById("soundBtn");
