@@ -18,7 +18,7 @@ python3 -m http.server 8000
 
 ## Precios
 
-- Planes de servicio (`#planes`): Esencial $500, Force $400, Pro $650 y Elite $1,699 MXN/mes,
+- Planes de servicio (`#planes`): Esencial $500, Force $500, Pro $799 y Elite $1,699 MXN/mes,
   con 10% de descuento por compromiso trimestral pagado por adelantado.
 - Membresías OG para tienda y paquetes (`#membresias`): Simplicity $189, Levels $289 y Platinum $585 al mes.
   Las tarjetas son 3D (siguen el cursor y se voltean al tocarlas). Sus beneficios están en el
