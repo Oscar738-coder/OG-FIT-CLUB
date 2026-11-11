@@ -369,11 +369,13 @@ ul, ol { padding: 0; list-style: none; }
 }
 .card3d.is-active .card3d__glare { opacity: 1; }
 
-.card3d__stripe { position: absolute; left: 0; right: 0; top: 10%; height: 15%; background: rgba(0,0,0,.78); }
-.card3d__back-title { position: absolute; left: 7%; right: 7%; top: 33%; font-size: 3.2cqw; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; opacity: .8; }
-.card3d__benefits { position: absolute; left: 7%; right: 7%; top: 44%; display: flex; flex-direction: column; gap: 2.2cqw; font-size: 4.3cqw; font-weight: 600; line-height: 1.25; }
-.card3d__benefits span { position: relative; padding-left: 5cqw; }
-.card3d__benefits span::before { content: ""; position: absolute; left: 0; top: .5em; width: 2.4cqw; height: 2.4cqw; border-radius: 50%; background: currentColor; opacity: .55; }
+.card3d__back-title { position: absolute; left: 7%; right: 7%; top: 8%; font-size: 3.1cqw; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; opacity: .75; padding-bottom: 2.4cqw; border-bottom: 1px solid currentColor; border-bottom-color: color-mix(in srgb, currentColor 25%, transparent); }
+.card3d__benefits { position: absolute; left: 7%; right: 7%; top: 21%; display: flex; flex-direction: column; gap: 1.6cqw; font-size: 3.9cqw; font-weight: 600; line-height: 1.22; }
+.card3d__benefits--6 { gap: 1.1cqw; font-size: 3.5cqw; }
+.card3d__benefits--7 { gap: .9cqw; font-size: 3.3cqw; }
+.card3d__note { position: absolute; left: 7%; right: 7%; bottom: 5%; font-size: 2.5cqw; opacity: .7; line-height: 1.25; }
+.card3d__benefits span { position: relative; padding-left: 4cqw; }
+.card3d__benefits span::before { content: ""; position: absolute; left: 0; top: .42em; width: 1.8cqw; height: 1.8cqw; border-radius: 50%; background: currentColor; opacity: .55; }
 
 /* Final */
 .final { position: relative; overflow: hidden; text-align: center; padding: clamp(120px, 15vw, 190px) 0; border-top: 1px solid var(--line); }
