@@ -175,10 +175,11 @@ ul, ol { padding: 0; list-style: none; }
 .focus li { padding: 16px 0; border-bottom: 1px solid var(--line); font-weight: 600; }
 
 /* Cambios */
-.changes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-.change figure { display: grid; grid-template-columns: 1fr 1fr; gap: 3px; border-radius: 20px; overflow: hidden; background: var(--line); box-shadow: 0 0 0 1px var(--line); }
-.change__half { position: relative; display: block; overflow: hidden; }
-.change__half img { width: 100%; aspect-ratio: 800 / 1450; object-fit: cover; transition: transform .8s var(--ease); }
+.changes { columns: 3; column-gap: 20px; }
+.change { break-inside: avoid; margin-bottom: 20px; }
+.change figure { display: flex; gap: 3px; margin: 0; border-radius: 20px; overflow: hidden; background: var(--line); box-shadow: 0 0 0 1px var(--line); }
+.change__half { position: relative; display: block; flex-basis: 0; min-width: 0; overflow: hidden; }
+.change__half img { display: block; width: 100%; height: auto; transition: transform .8s var(--ease); }
 .change:hover .change__half img { transform: scale(1.03); }
 .change__half b {
   position: absolute; left: 10px; bottom: 10px; font-size: 10.5px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
@@ -399,7 +400,7 @@ ul, ol { padding: 0; list-style: none; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 1040px) {
-  .changes { grid-template-columns: repeat(2, 1fr); }
+  .changes { columns: 2; }
   .tiers { grid-template-columns: repeat(2, 1fr); gap: 28px 16px; }
   .tier--featured { translate: none; }
   .tier--featured:hover { translate: 0 -6px; }
@@ -424,7 +425,8 @@ ul, ol { padding: 0; list-style: none; }
   body { font-size: 16px; }
   .wrap { padding-inline: 16px; }
   .tiers { grid-template-columns: 1fr; }
-  .changes { grid-template-columns: 1fr; gap: 16px; }
+  .changes { columns: 1; }
+  .change { margin-bottom: 16px; }
   .tier__tag { min-height: 0; }
   .extras { grid-template-columns: 1fr; }
   .product { padding: 20px 16px; }
