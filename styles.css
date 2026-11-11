@@ -519,3 +519,8 @@ body.menu-open { overflow: hidden; }
 main section[id] { scroll-margin-top: 68px; }
 .menu[hidden] { display: none; }
 .menu:not(.is-open) { pointer-events: none; }
+
+/* About copy */
+.about__copy .text { margin-top: 16px; max-width: 52ch; }
+.about__copy .h2 + .text { margin-top: 24px; }
+.text--lead { color: var(--text); font-size: clamp(18px, 1.6vw, 20px); line-height: 1.5; }
