@@ -55,6 +55,15 @@ const CONFIG = {
     items.forEach((el) => el.classList.add("is-in"));
   }
 
+  // Planes: foco de luz que sigue al cursor
+  document.querySelectorAll(".tier").forEach((t) => {
+    t.addEventListener("pointermove", (e) => {
+      const r = t.getBoundingClientRect();
+      t.style.setProperty("--mx", `${e.clientX - r.left}px`);
+      t.style.setProperty("--my", `${e.clientY - r.top}px`);
+    });
+  });
+
   // Tarjetas de membresía en 3D: inclinación con el cursor y giro al tocar
   document.querySelectorAll(".card3d").forEach((card) => {
     const tilt = card.querySelector(".card3d__tilt");
